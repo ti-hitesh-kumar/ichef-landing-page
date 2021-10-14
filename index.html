@@ -19,7 +19,12 @@
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
 		<style type="text/css">
+
 			header.masthead {
 				background: url(img/cover.png) no-repeat center center;
 				background-size: cover;
@@ -83,6 +88,10 @@
 			.slick-arrow{
 			    display: none !important;
 			}
+
+			.btn-set-white {
+				background-color: #fff;
+			}
 		</style>
 	</head>
 	<body id="page-top">
@@ -98,20 +107,20 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-						<li class="nav-item"><a class="nav-link me-lg-3" href="#features">Home</a></li>
+						<!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Home</a></li>
 						<li class="nav-item"><a class="nav-link me-lg-3" href="#features">Mission</a></li>
 						<li class="nav-item"><a class="nav-link me-lg-3" href="#features">Solution</a></li>
-						<li class="nav-item"><a class="nav-link me-lg-3" href="#download">About Us</a></li>
+						<li class="nav-item"><a class="nav-link me-lg-3" href="#download">About Us</a></li> -->
 					</ul>
-					<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+					<!-- <a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 						<span class="d-flex align-items-center">
 							<span class="small">Sign In</span>
 						</span>
-					</a>
+					</a> -->
 
 					<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 						<span class="d-flex align-items-center">
-							<span class="small">Sign Up</span>
+							<span>Sign Up</span>
 						</span>
 					</a>
 				</div>
@@ -128,6 +137,12 @@
 							<h1 class="display-1 lh-1 text-white mb-3">
 								Order <span class="text-app">Healthy</span> & <span class="text-app">Fresh Food</span> Any Time
 							</h1>
+
+							<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary btn-set-white rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+								<span class="d-flex align-items-center">
+									<span class="">Sign Up for early access --></span>
+								</span>
+							</a>
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -166,6 +181,11 @@
 							<img class="img-fluid mb-3" src="img/driver.svg" alt="...">
 							<h5>Become A Driver</h5>
 							<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+							<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+								<span class="d-flex align-items-center">
+									<span class="">Start Earning --></span>
+								</span>
+							</a>
 						</div>
 					</div>
 					<div class="col-lg-4">
@@ -173,6 +193,11 @@
 							<img class="img-fluid mb-3" src="img/merchant.svg" alt="...">
 							<h5>Become A Merchant</h5>
 							<p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+							<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+								<span class="d-flex align-items-center">
+									<span class="">Sign Up your store --></span>
+								</span>
+							</a>
 						</div>
 					</div>
 					<div class="col-lg-4">
@@ -180,6 +205,11 @@
 							<img class="img-fluid mb-3" src="img/customer.svg" alt="...">
 							<h5>Try The App</h5>
 							<p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+							<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+								<span class="d-flex align-items-center">
+									<span class="">Get the app --></span>
+								</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -209,7 +239,7 @@
 
 		<section>
 			<div class="container">
-				<div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+				<div class="row align-items-center justify-content-center justify-content-lg-between">
 					<div class="col-md-8">
 						<h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
 						<p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
@@ -221,7 +251,18 @@
 			</div>
 		</section>
 
-		<img src="img/mp-screens.png" class="img-fluid">
+		<section style="padding: 0;">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/mp-screens-1.png" class="d-block w-100">
+					</div>
+					<div class="carousel-item">
+						<img src="img/mp-screens-2.png" class="d-block w-100">
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- <section id="slider-bg">
 			<div class="container">
@@ -243,7 +284,12 @@
 					</div>
 					<div class="col-md-6 text-end">
 						<h2 class="display-4 lh-1 mb-4">Looking For A Chef</h2>
-						<p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+						<p class="lead fw-normal text-muted mb-5 mb-lg-0">IChef Technology is a technology company used to connect public clients with chefs, caterers, and more. The application enables chefs to advertise their unique food and custom dishes not readily available, ensuring customers can obtain delicious food from a personal chef. IChef technology purpose is to create a market place for culinary experts to thrive, as well as a marketplace for the people to have a wide variety of dishes & cuisines not readily available everywhere.</p>
+						<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn mt-3 btn-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<span class="d-flex align-items-center">
+								<span>Get Started with orderning</span>
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>
