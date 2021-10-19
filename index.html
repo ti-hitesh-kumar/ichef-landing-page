@@ -171,6 +171,16 @@
 				height: 100px;
 				background: #E11023;
 			}
+
+			@media (min-width: 992px) {
+				.nav-toggler-button {
+					display: none;
+				}
+			}
+
+			.remove-text-decoration {
+				text-decoration: unset;
+			}
 		</style>
 	</head>
 	<body id="page-top">
@@ -179,6 +189,11 @@
 			<div class="container px-5">
 				<a class="navbar-brand fw-bold" href="#page-top">
 					<img src="img/logo.svg" class="img-fluid" style="max-width: 70%;">
+				</a>
+				<a class="nav-toggler-button" href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+					<span class="d-flex align-items-center">
+						<span style="font-weight: bolder;">Sign In</span>
+					</span>
 				</a>
 				<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					Menu
@@ -199,7 +214,7 @@
 
 					<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 						<span class="d-flex align-items-center">
-							<span style="font-weight: bolder;">Sign Up</span>
+							<span style="font-weight: bolder;">Sign In</span>
 						</span>
 					</a>
 				</div>
@@ -217,7 +232,7 @@
 								Order <span class="text-app text-header">Healthy</span> & <br> <span class="text-app text-header">Fresh Food</span> Any Time
 							</h1>
 
-							<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary btn-set-white rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="2" class="btn btn-outline-primary btn-set-white rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 								<span class="d-flex align-items-center">
 									<span style="font-weight: bolder;">Sign Up for early access <span class="forward-arrow">&#8594;</span></span>
 								</span>
@@ -262,7 +277,7 @@
 								<h5 class="services-title">Become A <span style="font-weight: bolder;">Driver</span></h5>
 								<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
 							</div>
-							<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<button data-bs-app="3" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 								<span class="d-flex align-items-center">
 									<span class="">Start Earning <span class="forward-arrow">&#8594;</span></span>
 								</span>
@@ -276,7 +291,7 @@
 								<h5 class="services-title">Become A <span style="font-weight: bolder;">Merchant</span></h5>
 								<p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
 							</div>
-							<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<button data-bs-app="1" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 								<span class="d-flex align-items-center">
 									<span class="">Sign Up your store <span class="forward-arrow">&#8594;</span></span>
 								</span>
@@ -290,7 +305,7 @@
 								<h5 class="services-title">Try The <span style="font-weight: bolder;">App</span></h5>
 								<p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
 							</div>
-							<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<button data-bs-app="2" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 								<span class="d-flex align-items-center">
 									<span class="">Get the app <span class="forward-arrow">&#8594;</span></span>
 								</span>
@@ -307,14 +322,14 @@
 					<div class="col-md-6 text-center">
 						<div class="d-flex flex-column p-5 bg-dark" id="driver-tab" style="height: 30rem;">
 							<div class="mt-auto">
-								<span style="font-size: x-large; font-weight: bold;" class="text-white">As Driver</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button">Sign Up</button>
+								<span style="font-size: x-large; font-weight: bold;" class="text-white">As Driver</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="3">Sign Up</button>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 text-center">
 						<div class="d-flex flex-column p-5 bg-light" id="chef-tab" style="height: 30rem;">
 						   <div class="mt-auto">
-							   <span style="font-size: x-large; font-weight: bold;" class="text-white">As Chef</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button">Sign Up</button>
+							   <span style="font-size: x-large; font-weight: bold;" class="text-white">As Chef</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="1">Sign Up</button>
 						   </div>
 						</div>
 					</div>
@@ -370,7 +385,7 @@
 					<div class="col-md-6 text-center text-md-end">
 						<h2 class="display-4 lh-1 mb-4 mt-5 mt-md-0 chef-area">Looking For A <br><span style="font-weight: 700;">Chef</span></h2>
 						<p class="lead fw-normal text-muted mb-5 mb-lg-0">IChef Technology is a technology company used to connect public clients with chefs, caterers, and more. The application enables chefs to advertise their unique food and custom dishes not readily available, ensuring customers can obtain delicious food from a personal chef. IChef technology purpose is to create a market place for culinary experts to thrive, as well as a marketplace for the people to have a wide variety of dishes & cuisines not readily available everywhere.</p>
-						<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn mt-3 btn-primary rounded-pill p-3 mb-2 mx-2 mb-lg-0">
+						<button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="1" class="btn mt-3 btn-primary rounded-pill p-3 mb-2 mx-2 mb-lg-0">
 							<span class="d-flex align-items-center">
 								<span>Get Started with orderning</span>
 							</span>
@@ -388,8 +403,8 @@
 						<h2 class="display-4 lh-1 mb-4">Download App For Exciting Deals</h2>
 						<p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built.</p>
 						<div class="mt-4">
-							<a class="me-lg-3 mb-4 mb-lg-0 mt-3 mt-md-0" href="#!"><img class="app-badge" src="img/play-store.png" alt="..." /></a>
-							<a href="#!"><img class="app-badge mt-3 mt-md-0" src="img/apple-store.png" alt="..." /></a>
+							<a class="me-lg-3 mb-4 mb-lg-0 mt-3 mt-md-0" href="javascript:"><img class="app-badge" src="img/play-store.png" alt="..." /></a>
+							<a href="javascript:"><img class="app-badge mt-3 mt-md-0" src="img/apple-store.png" alt="..." /></a>
 						</div>
 					</div>
 					<div class="col-sm-8 col-md-6 mt-5">
@@ -448,17 +463,17 @@
 
 		      <ul class="nav mt-4 mt-md-0 mx-auto mx-md-5">
 	            <li class="ms-3">
-	            	<a class="text-muted" href="#">
+	            	<a class="text-muted" href="javascript:">
 	            		<img class="img-fluid" style="max-height: 25px;" src="img/facebook.svg">
 	            	</a>
 	            </li>
 	            <li class="ms-3">
-	            	<a class="text-muted" href="#">
+	            	<a class="text-muted" href="javascript:">
 	            		<img class="img-fluid" style="max-height: 25px;" src="img/instagram.svg">
 	            	</a>
 	            </li>
 	            <li class="ms-3">
-	            	<a class="text-muted" href="#">
+	            	<a class="text-muted" href="javascript:">
 	            		<img class="img-fluid" style="max-height: 25px;" src="img/twitter.svg">
 	            	</a>
 	            </li>
@@ -545,33 +560,45 @@
 						<div class="container">
 						    <div class="row g-3">
 
-						    	<div class="col">
+						    	<div class="col" id="modal-app-1" style="display: none;">
 						    		<div class="p-3 border bg-light">
 						    			<h5 class="text-center mb-4">Merchant App</h5>
 						    			<div class="text-center">
-						    				<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
-						    				<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    				<a href="javascript:" class="remove-text-decoration">
+						    					<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
+						    				</a>
+						    				<a href="javascript:" class="remove-text-decoration">
+						    					<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    				</a>
 						    			</div>
 						    		</div>
 						    		
 						    	</div>
 
-						    	<div class="col">
+						    	<div class="col" id="modal-app-2" style="display: none;">
 						    		<div class="p-3 border bg-light">
 						    			<h5 class="text-center mb-4">Customer App</h5>
 						    			<div class="text-center">
-						    				<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
-						    				<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    				<a href="javascript:" class="remove-text-decoration">
+						    					<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
+						    				</a>
+						    				<a href="javascript:" class="remove-text-decoration">
+						    					<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    				</a>
 						    			</div>
 						    		</div>
 						    	</div>
 
-						    	<div class="col">
+						    	<div class="col" id="modal-app-3" style="display: none;">
 						    		<div class="p-3 border bg-light">
 						    			<h5 class="text-center mb-4">Driver App</h5>
 						    			<div class="text-center">
-						    				<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
-						    				<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    				<a href="javascript:" class="remove-text-decoration">
+						    					<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
+						    				</a>
+						    				<a href="javascript:" class="remove-text-decoration">
+						    					<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    				</a>
 						    			</div>
 						    		</div>
 						    	</div>
@@ -594,7 +621,7 @@
 		<!-- * *                               SB Forms JS                               * *-->
 		<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 		<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-		<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+		<!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
 
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -628,6 +655,20 @@
 						}
 					]
 				});
+			});
+
+			document.getElementById('exampleModal').addEventListener('show.bs.modal', function (event) {
+				var button = event.relatedTarget;
+				var recipient = button.getAttribute('data-bs-app');
+				recipient.split(",").forEach(element => {
+					document.getElementById(`modal-app-${element}`).style.display = "unset";
+				});
+			});
+
+			document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function (event) {
+				document.getElementById(`modal-app-1`).style.display = "none";
+				document.getElementById(`modal-app-2`).style.display = "none";
+				document.getElementById(`modal-app-3`).style.display = "none";
 			});
 		</script>
 	</body>
