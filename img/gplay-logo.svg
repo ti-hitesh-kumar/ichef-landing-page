@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82">
+  <g id="google_Play-btn" data-name="google Play-btn" transform="translate(363 -2096)">
+    <rect id="Rectangle_17400" data-name="Rectangle 17400" width="82" height="82" rx="15" transform="translate(-363 2096)" fill="#eb2d2d"/>
+    <g id="google-play" transform="translate(-344 2113)">
+      <path id="Path_3918" data-name="Path 3918" d="M42.353,30.587l-23.7,22.822A4.033,4.033,0,0,1,16.9,50.044V11.129a4.033,4.033,0,0,1,1.757-3.364Z" transform="translate(-16.895 -6.985)" fill="#fff" stroke="#eb2d2d" stroke-width="1"/>
+      <path id="Path_3919" data-name="Path 3919" d="M66.383,15.63,58.09,23.6,34.39.78a3.16,3.16,0,0,1,.279-.193A4.054,4.054,0,0,1,38.761.523Z" transform="translate(-32.633 0)" fill="#fff" stroke="#eb2d2d" stroke-width="1"/>
+      <path id="Path_3920" data-name="Path 3920" d="M288.68,163.576a4.1,4.1,0,0,1-2.143,3.643l-7.907,4.329-8.293-7.971,8.293-7.971,7.907,4.329A4.1,4.1,0,0,1,288.68,163.576Z" transform="translate(-244.88 -139.975)" fill="#fff" stroke="#eb2d2d" stroke-width="1"/>
+      <path id="Path_3921" data-name="Path 3921" d="M66.383,242.936,38.761,258.044a4.108,4.108,0,0,1-4.093-.064,3.132,3.132,0,0,1-.279-.193l23.7-22.822Z" transform="translate(-32.633 -211.363)" fill="#fff" stroke="#eb2d2d" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

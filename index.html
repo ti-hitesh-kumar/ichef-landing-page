@@ -6,7 +6,7 @@
 		<meta name="description" content="" />
 		<meta name="author" content="" />
 		<title>I-Chef</title>
-		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="favicon.png" />
 		<!-- Bootstrap icons-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 		<!-- Google fonts-->
@@ -24,6 +24,11 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 		<style type="text/css">
+
+			@font-face {
+				font-family: mystical;
+				src: url('font/mystical.ttf') format('truetype');
+			}
 
 			header.masthead {
 				background: url(img/cover.png) no-repeat center center;
@@ -94,12 +99,77 @@
 			}
 
 			.text-header {
-				font-weight: 600;
+				font-weight: 700;
 			}
 
 			.forward-arrow {
 				font-size: 30px;
 				line-height: 0;
+			}
+
+			.start-underline {
+				position: relative;
+			}
+
+			.start-underline:before {
+				position: absolute;
+				content: '';
+				height: 3px;
+				bottom: -6px;
+				width: 10%;
+				background: #E11023;
+			}
+
+			.services-title {
+				position: relative;
+				margin-bottom: 30px;
+			}
+
+			/*.services-title:before {
+				position: absolute;
+				margin: 0 auto;
+				content: '';
+				height: 3px;
+				bottom: -6px;
+				width: 15%;
+				background: #E11023;
+			}*/
+			.services-title:before {
+				position: absolute;
+				content: '';
+				height: 3px;
+				bottom: -10px;
+				margin: 0 auto;
+				left: 0;
+				right: 0;
+				width: 20%;
+				background: #E11023;
+			}
+
+			.cooking-pan {
+				position: relative;
+			}
+			.cooking-pan:before {
+				position: absolute;
+				display: inline-block;
+				content: "";
+				left: -38px;
+				width: 1rem;
+				height: 100px;
+				background: #E11023;
+			}
+
+			.chef-area {
+				position: relative;
+			}
+			.chef-area:before {
+				position: absolute;
+				display: inline-block;
+				content: "";
+				right: -38px;
+				width: 1rem;
+				height: 100px;
+				background: #E11023;
 			}
 		</style>
 	</head>
@@ -139,22 +209,22 @@
 		<header class="masthead" style="padding: 12rem 0;">
 			<div class="container px-5">
 				<div class="row align-items-center">
-					<div class="col-lg-6">
+					<div class="col-lg-7">
 						<!-- Mashead text and app badges-->
 						<div class="mb-5 mb-lg-0 text-center text-lg-start">
-							<p class="lead fw-normal text-white mb-5">Easy way to order your food</p>
-							<h1 class="display-1 lh-1 text-white mb-3">
-								Order <span class="text-app text-header">Healthy</span> & <span class="text-app text-header">Fresh Food</span> Any Time
+							<p class="lead fw-normal text-white mb-4 start-underline" style="font-family: 'mystical', Helvetica, Arial, sans-serif;">TRY EXCLUSIVE DISHES & RECIPES NEAR YOU</p>
+							<h1 class="display-1 lh-1 text-white mb-3" style="font-weight: 500;">
+								Order <span class="text-app text-header">Healthy</span> & <br> <span class="text-app text-header">Fresh Food</span> Any Time
 							</h1>
 
-							<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary btn-set-white rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary btn-set-white rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 								<span class="d-flex align-items-center">
 									<span style="font-weight: bolder;">Sign Up for early access <span class="forward-arrow">&#8594;</span></span>
 								</span>
-							</a>
+							</button>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-5">
 						<!-- Masthead device mockup feature-->
 						<div class="masthead-device-mockup">
 							<!-- <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -189,42 +259,42 @@
 						<div class="testimonial-item mx-auto mb-5 mb-lg-0">
 							<img class="img-fluid mb-3" src="img/services-1.png" alt="...">
 							<div style="min-height: 150px;">
-								<h5>Become A <span style="font-weight: bolder;">Driver</span></h5>
+								<h5 class="services-title">Become A <span style="font-weight: bolder;">Driver</span></h5>
 								<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
 							</div>
-							<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 								<span class="d-flex align-items-center">
 									<span class="">Start Earning <span class="forward-arrow">&#8594;</span></span>
 								</span>
-							</a>
+							</button>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="testimonial-item mx-auto mb-5 mb-lg-0">
 							<img class="img-fluid mb-3" src="img/services-2.png" alt="...">
 							<div style="min-height: 150px;">
-								<h5>Become A <span style="font-weight: bolder;">Merchant</span></h5>
+								<h5 class="services-title">Become A <span style="font-weight: bolder;">Merchant</span></h5>
 								<p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
 							</div>
-							<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 								<span class="d-flex align-items-center">
 									<span class="">Sign Up your store <span class="forward-arrow">&#8594;</span></span>
 								</span>
-							</a>
+							</button>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="testimonial-item mx-auto mb-5 mb-lg-0">
 							<img class="img-fluid mb-3" src="img/services-3.png" alt="...">
 							<div style="min-height: 150px;">
-								<h5>Try The <span style="font-weight: bolder;">App</span></h5>
+								<h5 class="services-title">Try The <span style="font-weight: bolder;">App</span></h5>
 								<p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
 							</div>
-							<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+							<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
 								<span class="d-flex align-items-center">
 									<span class="">Get the app <span class="forward-arrow">&#8594;</span></span>
 								</span>
-							</a>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -256,8 +326,7 @@
 			<div class="container">
 				<div class="row align-items-center justify-content-center justify-content-lg-between">
 					<div class="col-md-8">
-						<h2 class="display-4 lh-1 mb-4">Why We</h2>
-						<h2 class="display-4 lh-1 mb-4 fw-bolder">Feel So Deeply</h2>
+						<h2 class="display-4 lh-1 mb-4 cooking-pan">Why We <br> <span style="font-weight: 700;">Feel So Deeply</span></h2>
 						<p class="lead fw-normal text-muted mb-5 mb-lg-0">This platform will enable you to advertise catering reservations & get booked as well as run your business like a restaurant where we connect you with drivers for delivery. you have the choices to add & remove items on your menu & off your menu you will have the data that shows you what works and what doesn’t work and what time business is going best & what time a certain dish is most popular.</p>
 					</div>
 					<div class="col-md-4">
@@ -299,13 +368,13 @@
 						<div class="px-5 px-sm-0"><img class="img-fluid" src="img/second-sec-chef.png" alt="..." /></div>
 					</div>
 					<div class="col-md-6 text-center text-md-end">
-						<h2 class="display-4 lh-1 mb-4 mt-5 mt-md-0">Looking For A Chef</h2>
+						<h2 class="display-4 lh-1 mb-4 mt-5 mt-md-0 chef-area">Looking For A <br><span style="font-weight: 700;">Chef</span></h2>
 						<p class="lead fw-normal text-muted mb-5 mb-lg-0">IChef Technology is a technology company used to connect public clients with chefs, caterers, and more. The application enables chefs to advertise their unique food and custom dishes not readily available, ensuring customers can obtain delicious food from a personal chef. IChef technology purpose is to create a market place for culinary experts to thrive, as well as a marketplace for the people to have a wide variety of dishes & cuisines not readily available everywhere.</p>
-						<a href="https://chef-staging.theintellify.net/#/dashboard" class="btn mt-3 btn-primary rounded-pill px-3 mb-2 mx-2 mb-lg-0">
+						<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn mt-3 btn-primary rounded-pill p-3 mb-2 mx-2 mb-lg-0">
 							<span class="d-flex align-items-center">
 								<span>Get Started with orderning</span>
 							</span>
-						</a>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -464,6 +533,56 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body" style="padding-bottom: 3rem;">
+
+						<div class="container">
+						    <div class="row g-3">
+
+						    	<div class="col">
+						    		<div class="p-3 border bg-light">
+						    			<h5 class="text-center mb-4">Merchant App</h5>
+						    			<div class="text-center">
+						    				<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
+						    				<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    			</div>
+						    		</div>
+						    		
+						    	</div>
+
+						    	<div class="col">
+						    		<div class="p-3 border bg-light">
+						    			<h5 class="text-center mb-4">Customer App</h5>
+						    			<div class="text-center">
+						    				<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
+						    				<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    			</div>
+						    		</div>
+						    	</div>
+
+						    	<div class="col">
+						    		<div class="p-3 border bg-light">
+						    			<h5 class="text-center mb-4">Driver App</h5>
+						    			<div class="text-center">
+						    				<img class="app-badge pe-2" src="img/gplay-logo.svg" alt="...">
+						    				<img class="app-badge ps-2" src="img/apple-logo.svg" alt="...">
+						    			</div>
+						    		</div>
+						    	</div>
+
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Bootstrap core JS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
