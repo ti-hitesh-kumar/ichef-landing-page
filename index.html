@@ -39,7 +39,7 @@
 			}
 
 			#driver-tab {
-				background: url(img/driver-tab.png) no-repeat center center;
+				/*background: url(img/driver-tab.png) no-repeat center center;*/
 				background-size: cover;
 				box-shadow: inset 0px -91px 50px -10px #1f1e1e;
 			}
@@ -60,7 +60,7 @@
 			}
 
 			#chef-tab {
-				background: url(img/chef-tab.png) no-repeat center center;
+				/*background: url(img/chef-tab.png) no-repeat center center;*/
 				background-size: cover;
 				box-shadow: inset 0px -91px 50px -10px #1f1e1e;
 			}
@@ -209,6 +209,7 @@
 
 			gtag('config', 'UA-212285823-1');
 		</script>
+
 	</head>
 	<body id="page-top">
 		<!-- Navigation-->
@@ -347,16 +348,22 @@
 			<div class="container-fluid">
 				<div class="row align-items-md-stretch">
 					<div class="col-md-6 text-center">
-						<div class="d-flex flex-column p-5 bg-dark" id="driver-tab" style="height: 30rem;">
+						<div class="d-flex flex-column bg-dark" id="driver-tab">
 							<div class="mt-auto">
-								<span style="font-size: x-large; font-weight: bold;" class="text-white">As Driver</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="3">Sign Up</button>
+								<video style="width: 100%; height: 420px;" controls src="video/driver.mp4"></video>
+								<div class="my-3">
+									<span style="font-size: x-large; font-weight: bold;" class="text-white">As Driver</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="3">Sign Up</button>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 text-center">
-						<div class="d-flex flex-column p-5 bg-light" id="chef-tab" style="height: 30rem;">
+						<div class="d-flex flex-column bg-light" id="chef-tab">
 						   <div class="mt-auto">
-							   <span style="font-size: x-large; font-weight: bold;" class="text-white">As Chef</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="1">Sign Up</button>
+						   		<video style="width: 100%; height: 420px;" controls src="video/chef.mp4#t=0.5"></video>
+								<div class="my-3">
+									<span style="font-size: x-large; font-weight: bold;" class="text-white">As Chef</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="1">Sign Up</button>
+						   		</div>
 						   </div>
 						</div>
 					</div>
