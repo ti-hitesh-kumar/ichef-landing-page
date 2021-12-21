@@ -22,7 +22,41 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+		<!-- https://maxl.us/hide-related -->
+<style>
+    .hytPlayerWrap {
+        display: inline-block;
+        position: relative;
+    }
+    .hytPlayerWrap.ended::after {
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 64px 64px;
+        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);
+    }
+    .hytPlayerWrap.paused::after {
+        content:"";
+        position: absolute;
+        top: 70px;
+        left: 0;
+        bottom: 50px;
+        right: 0;
+        cursor: pointer;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 40px 40px;
+        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNzA2LjY2NyIgaGVpZ2h0PSIxNzA2LjY2NyIgdmlld0JveD0iMCAwIDEyODAgMTI4MCI+PHBhdGggZD0iTTE1Ny42MzUgMi45ODRMMTI2MC45NzkgNjQwIDE1Ny42MzUgMTI3Ny4wMTZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
+    }
+</style>
 		<style type="text/css">
 
 			@font-face {
@@ -350,7 +384,14 @@
 					<div class="col-md-6 text-center">
 						<div class="d-flex flex-column bg-dark" id="driver-tab">
 							<div class="mt-auto">
-								<video style="width: 100%; height: 420px;" controls src="video/driver.mp4"></video>
+								<div class="hytPlayerWrap" style="width: 100%;">
+							        <iframe style="width: 100%;"
+							            width="640" height="360"
+							            src="https://www.youtube.com/embed/WJwqi5I0aC8?rel=0&enablejsapi=1"
+							            frameborder="0"
+							        ></iframe>
+							    </div>
+								
 								<div class="my-3">
 									<span style="font-size: x-large; font-weight: bold;" class="text-white">As Driver</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="3">Sign Up</button>
 								</div>
@@ -360,8 +401,14 @@
 					<div class="col-md-6 text-center">
 						<div class="d-flex flex-column bg-light" id="chef-tab">
 						   <div class="mt-auto">
-						   		<video style="width: 100%; height: 420px;" controls src="video/chef.mp4#t=0.5"></video>
-								<div class="my-3">
+						   		<div class="hytPlayerWrap" style="width: 100%;">
+							        <iframe style="width: 100%;" 
+							            width="640" height="360"
+							            src="https://www.youtube.com/embed/wUmKHLG3YuA?rel=0&enablejsapi=1"
+							            frameborder="0"
+							        ></iframe>
+							    </div>
+						   		<div class="my-3">
 									<span style="font-size: x-large; font-weight: bold;" class="text-white">As Chef</span> <button class="btn btn-light rounded-pill ms-3 text-app" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="1">Sign Up</button>
 						   		</div>
 						   </div>
@@ -424,7 +471,19 @@
 					</div>
 					<div class="col-md-6 text-center text-md-end">
 						<h2 class="display-4 lh-1 mb-4 mt-5 mt-md-0 chef-area">Looking For A <br><span style="font-weight: 700;">Chef</span></h2>
-						<p class="lead fw-normal text-muted mb-5 mb-lg-0">IChef Technology is a technology company used to connect public clients with chefs, caterers, and more. The application enables chefs to advertise their unique food and custom dishes not readily available, ensuring customers can obtain delicious food from a personal chef. IChef technology purpose is to create a market place for culinary experts to thrive, as well as a marketplace for the people to have a wide variety of dishes & cuisines not readily available everywhere.</p>
+						<p class="lead fw-normal text-muted mb-5 mb-lg-0">
+							<span>
+								IChef is a mobile and web based app. Our app bridges the gap between chefs, caterers,food trucks and bartenders. Our app enables these culinary experts to run their businesses like a restaurant.
+							</span>
+
+							<span>
+								We offer 2 systems on our app. 1. Delivery, 2. Catering/Reservations,
+							</span>
+
+							<span>
+								The delivery options allows chefs to receive orders from customers & receive deliveries from our drivers. Our reservation system is designed for any event or gathering. With our reservation system customers can enjoin-home dining experiences from chefs. Customers can also receive catering orders for the whole family with this system.
+							</span>
+						</p>
 						<button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-app="1" class="btn mt-3 btn-primary rounded-pill p-3 m-3">
 							<span class="d-flex align-items-center">
 								<span>Get Started with orderning</span>
